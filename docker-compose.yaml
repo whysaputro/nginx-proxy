@@ -7,6 +7,6 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./conf/:/etc/nginx/
-      - ./includes/:/etc/nginx/includes/
+      - ./data/nginx.conf:/etc/nginx/nginx.conf
+      - ./data/includes/:/etc/nginx/includes/
     network_mode: bridge
