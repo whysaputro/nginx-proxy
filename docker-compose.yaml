@@ -1,4 +1,7 @@
-nginx-proxy:
+version: '3.9'
+
+services:
+  nginx-proxy:
     container_name: nginx-proxy
     image: nginx:latest
     ports:
