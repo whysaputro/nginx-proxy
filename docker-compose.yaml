@@ -8,5 +8,6 @@ services:
       - 80:80
     volumes:
       - ./data/nginx.conf:/etc/nginx/nginx.conf
+      - ./data/logs/:/etc/nginx/logs/
       - ./data/includes/:/etc/nginx/includes/
     network_mode: bridge
