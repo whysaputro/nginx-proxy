@@ -6,5 +6,8 @@ nginx-proxy:
     volumes:
       - ./conf/:/etc/nginx/
       - ./includes/:/etc/nginx/includes/
-    networks:
-      - container-network
+
+networks:
+  default:
+    external:
+      name: bridge
